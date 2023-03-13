@@ -1,14 +1,14 @@
 import "./Card.scss";
 
-const Card = ({ x, y, rotate }: any) => {
+const Card = ({ x, y, rotate, title }: any) => {
   return (
     <div
       className="Card"
       style={{
-        transform: `translate(${x * 35}vh, -${y * 35}vh) rotate(${rotate})`,
+        transform: `translate(${x * 36}vh, ${y * 36}vh) rotate(${rotate})`,
       }}
     >
-      Card
+      {title}
     </div>
   );
 };
