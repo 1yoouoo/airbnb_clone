@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useEffect, useRef } from "react";
 import Waves from "../../Components/canvas/Waves";
+import Projects from "../../Components/Projects/Projects";
 import Divider from "../../styled-components/Divider";
 import Dots from "../../styled-components/Dots";
 
@@ -92,7 +93,7 @@ const Home = () => {
       <Divider />
       <div className="inner bg-blue">2</div>
       <Divider />
-      <div className="inner bg-pink">3</div>
+      <Projects />
     </div>
   );
 };
