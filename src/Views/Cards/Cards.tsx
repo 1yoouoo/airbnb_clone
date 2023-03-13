@@ -1,10 +1,7 @@
 import Card from "../Card/Card";
 import "./Cards.scss";
+
 const dummy = [
-  {
-    id: 0,
-    title: "card0",
-  },
   {
     id: 1,
     title: "card1",
@@ -33,26 +30,22 @@ const dummy = [
     id: 7,
     title: "card7",
   },
-  {
-    id: 8,
-    title: "card8",
-  },
 ];
 
 const Cards = () => {
-  const degree = 140 / dummy.length;
-  console.log(degree);
-
+  const degree = 360 / dummy.length;
+  const test = 150;
+  console.log(180 - test);
+  console.log(test);
   return (
     <div className="Cards">
       {dummy.map((card) => {
         return (
           <Card
-            title={card.title}
-            id={card.id}
-            x={`${Math.sin((110 + degree * card.id) * (Math.PI / 180))}`}
-            y={`${Math.cos((110 + degree * card.id) * (Math.PI / 180))}`}
-            rotate={`${180 - (110 + degree * card.id)}deg`}
+            x={`${Math.sin((180 - degree * (card.id - 1)) * (Math.PI / 180))}`}
+            y={`${Math.cos((180 - degree * (card.id - 1)) * (Math.PI / 180))}`}
+            rotate={`${180 - (180 - degree * (card.id - 1))}deg`}
+            title="hi"
           />
         );
       })}

@@ -1,6 +1,7 @@
 .Card {
+  display: inline-block;
   border: 1px solid black;
-  background-color: rgba(54, 54, 54, 0.576);
+  background-color: rgb(143, 143, 143);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -9,4 +10,11 @@
   margin: auto;
   width: 20vh;
   height: 25vh;
+  cursor: pointer;
+  &:hover {
+    transform: translate(10px, 10px) scale(1.2);
+    transition: all 1s ease;
+    transform-origin: center center;
+    background-color: red;
+  }
 }
