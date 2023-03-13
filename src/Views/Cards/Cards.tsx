@@ -30,6 +30,46 @@ const dummy = [
     id: 7,
     title: "card7",
   },
+  {
+    id: 8,
+    title: "card8",
+  },
+  {
+    id: 9,
+    title: "card9",
+  },
+  {
+    id: 10,
+    title: "card10",
+  },
+  {
+    id: 11,
+    title: "card11",
+  },
+  {
+    id: 12,
+    title: "card12",
+  },
+  {
+    id: 13,
+    title: "card13",
+  },
+  {
+    id: 14,
+    title: "card14",
+  },
+  {
+    id: 15,
+    title: "card15",
+  },
+  {
+    id: 16,
+    title: "card16",
+  },
+  {
+    id: 17,
+    title: "card17",
+  },
 ];
 
 const Cards = () => {

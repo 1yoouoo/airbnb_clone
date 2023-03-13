@@ -5,7 +5,7 @@ const Card = ({ x, y, rotate, title }: any) => {
     <div
       className="Card"
       style={{
-        transform: `translate(${x * 36}vh, ${y * 36}vh) rotate(${rotate})`,
+        transform: `translate(${x * 35}vw, ${y * 35}vw) rotate(${rotate})`,
         cursor: "pointer",
         transition: "all 0.5s ease",
       }}

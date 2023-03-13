@@ -4,7 +4,26 @@
   margin: auto;
   width: 100vh;
   height: 100vh;
-  border: 3px solid red;
   position: relative;
-  // transform: translateY(0%);
+  -webkit-animation: rotate 120s linear infinite;
+  -moz-animation: rotate 120s linear infinite;
+  -ms-animation: rotate 120s linear infinite;
+  -o-animation: rotate 120s linear infinite;
+  animation: rotate 120s linear infinite;
+}
+@keyframes rotate {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: translateY(70%) rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: translateY(70%) rotate(360deg);
+  }
 }
