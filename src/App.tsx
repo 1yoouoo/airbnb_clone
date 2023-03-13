@@ -3,8 +3,7 @@ import Routing from './Routing';
 function App() {
   return (
     <>
-      {/* <Routing /> */}
-      Cloud Front test
+      <Routing />
     </>
   );
 }
