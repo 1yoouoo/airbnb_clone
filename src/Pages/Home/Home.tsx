@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useEffect, useRef } from "react";
+import Waves from "../../Components/canvas/Waves";
 import Divider from "../../styled-components/Divider";
 import Dots from "../../styled-components/Dots";
 
@@ -87,7 +88,7 @@ const Home = () => {
   }, []);
   return (
     <div ref={outerDivRef} className="outer">
-      <div className="inner bg-yellow">1</div>
+      <Waves />
       <Divider />
       <div className="inner bg-blue">2</div>
       <Divider />
